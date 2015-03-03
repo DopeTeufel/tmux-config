@@ -1,4 +1,4 @@
-[Tmux](http://tmux.sourceforge.net/) is a terminal multiplexer. Tested with tmux 1.5 and 1.6.
+[Tmux](http://tmux.sourceforge.net/) is a terminal multiplexer. Tested with tmux 1.9.
 
 This config has support for [tmux-mem-cpu](http://github.com/thewtex/tmux-mem-cpu-load).
 
@@ -144,7 +144,7 @@ Commands
   * `Control + a` then `n` to next window
   * `Control + a` then `p` to previous window
   * `Control + a` then `[0-9]` move to window number
-  * `Control + a` then `&` to kill window
+  * `Control + a` then `x` to kill window
 
 
 by Tony Narlock (tony@git-pull.com)
