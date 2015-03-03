@@ -10,7 +10,7 @@ Installation
   Download:
 
 ```bash
-git clone https://github.com/tony/tmux-config.git ~/.tmux
+git clone https://github.com/DopeTeufel/tmux-config.git ~/.tmux
 ```
 
   Copy tmux config to home:
@@ -145,9 +145,3 @@ Commands
   * `Control + a` then `p` to previous window
   * `Control + a` then `[0-9]` move to window number
   * `Control + a` then `x` to kill window
-
-
-by Tony Narlock (tony@git-pull.com)
-
-* Github: http://www.github.com/tony
-* Website: http://www.git-pull.com
