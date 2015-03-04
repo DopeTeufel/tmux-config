@@ -1,0 +1,8 @@
+#!/bin/bash
+
+RAM_TOTAL=$(free -m | grep "Speicher" | sed "s/ \+/ /g" | cut -f 2 -d " ")
+RAM_USED=$(free -m | grep "Speicher" | sed "s/ \+/ /g" | cut -f 3 -d " ")
+
+RAM_PERCENT=$(echo "scale=3;($RAM_USED/$RAM_TOTAL) * 100" | bc | cut -f 1 -d ".")
+
+echo "$RAM_PERCENT%"
