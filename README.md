@@ -27,6 +27,17 @@ cd ~/.tmux
 
 Stats
 -----
+### ram-usage
+
+ make executable:
+```
+chmod +x ram-usage
+```
+
+Copy ram-usage script to `/usr/bin/`:
+```
+sudo ln -s ram-usage /usr/bin/ram-usage
+```
 
 ### tmux-mem-cpu-load
 
