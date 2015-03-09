@@ -5,6 +5,4 @@ RAM_USED=$(tmux-mem-cpu-load | cut -f 1 -d "M" | cut -f 1 -d "/")
 
 RAM_PERCENT=$(echo "scale=3;($RAM_USED/$RAM_TOTAL) * 100" | bc | cut -f 1 -d ".")
 
-CPU_PERCENT=$(tmux-mem-cpu-load | sed "s/ \+/\n/g" | grep "%")
-
-echo "$CPU_PERCENT;$RAM_PERCENT%"
+echo "$RAM_PERCENT%"

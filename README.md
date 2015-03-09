@@ -19,46 +19,26 @@ git clone https://github.com/DopeTeufel/tmux-config.git ~/.tmux
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 ```
 
-  Go to config dir:
+Stats
+-----
 
+Go to config dir:
 ```bash
 cd ~/.tmux
 ```
 
-Stats
------
-### ram-usage
-
- make executable:
-```
-chmod +x ram-usage
-```
-
-Copy ram-usage script to `/usr/bin/`:
-```
-sudo ln -s ram-usage /usr/bin/ram-usage
-```
-
 ### tmux-mem-cpu-load
 
-(Linux-only)
-
-  Prep ourself to download submodule:
+Download tmux-mem-cpu-load from github reposetory:
 
 ```bash
-git submodule init
-```
-
-  Download submodule:
-
-```bash
-git submodule update
+git clone https://github.com/thewtex/tmux-mem-cpu-load.git
 ```
 
   Change dir to tmux-mem-cpu-load:
 
 ```bash
-cd ~/.tmux/vendor/tmux-mem-cpu-load
+cd ~/.tmux/tmux-mem-cpu-load
 ```
 
   General make file:
@@ -79,6 +59,7 @@ make
 sudo make install
 ```
 
+
   Go home:
 
 ```bash
@@ -95,30 +76,6 @@ tmux
 
 ```bash
 tmux source-file ~/.tmux.conf
-```
-
-### basic-cpu-and-memory.tmux
-
-(Cross platform, tested with python 2.7+)
-
-Update March 19, 2014. Works with psutil 2.0 now.
-
-  install ``psutil``
-
-```bash
-sudo pip install psutil
-```
-
-  copy ``~/.tmux/vendor/basic-cpu-and-memory.tmux`` to bin
-
-```bash
-sudo cp ~/.tmux/vendor/basic-cpu-and-memory.tmux /usr/local/bin/tmux-mem-cpu-load
-```
-
-  make executable
-
-```bash
-sudo chmod +x /usr/local/bin/tmux-mem-cpu-load
 ```
 
 Start tmux
